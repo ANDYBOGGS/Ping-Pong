@@ -8,7 +8,7 @@ https://andyboggs.github.io/vacation-suggester/
 
 ## Description
 
-A simple webpage using Javascript, JQuery CSS, Bootstrap & HTML to return a vacation suggestion to the user.
+A simple webpage using Javascript, JQuery CSS, Bootstrap & HTML. An exercise in Arrays and Looping.
 
 ## Specifications:
 
