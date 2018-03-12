@@ -2,7 +2,7 @@
 
 #### JS/JQuery Business Logic/UI Logic Exercise, 2018
 
-https://andyboggs.github.io/vacation-suggester/
+https://andyboggs.github.io/Ping-Pong/
 
 #### By Andrew Jacob Boggs
 
@@ -15,14 +15,22 @@ A simple webpage using Javascript, JQuery CSS, Bootstrap & HTML to return a vaca
 * It can count up to the provided number.
   * Example Input: 5
   * Example Output: [1,2,3,4,5]
-* Step 2
-* Step 3
-* Step 4
-* Step 5
+
+* It can replace numbers divisible by 3 with Ping.
+  * Example Input 3
+  * Example Output: [1,2,Ping]
+
+* It can replace numbers divisible by 5 with Pong.
+  * Example Input: 5
+  * Example Output: [1,2,Ping,4,Pong]
+
+* It can replace numbers divisible by 3 and 5 with Ping-Pong.
+  * Example Input: 15
+  * Example Output: [1,2,Ping,4,Pong,Ping,7,8,Ping,Pong,11,Ping,13,14,Ping-Pong]
 
 ## Known Bugs
 
-There are no know bugs at this time.  
+There is an unwanted bullet on the unordered output list that I can't seem to get rid of. Need to refresh result after each use.  
 
 ## Support and contact details
 

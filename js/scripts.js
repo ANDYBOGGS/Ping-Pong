@@ -1,5 +1,4 @@
 //Biz Logic
-var ul = $('#output ul');
 function countUp(numInput) {
   var outputArr =[];
   for (var index = 1; index <= numInput; index++) {
@@ -25,9 +24,10 @@ $(document).ready(function() {
     debugger;
     var numInput = parseInt($("input#userInput").val());
     var result = countUp(numInput);
+    var ul = $("#output ul");
 
 for (var index=0; index < result.length; index++) {
-  $('#output ul').append("<li>" + result[index] + "</li>");
+  $("#output ul").append("<li>" + result[index] + "</li>");
 }
 
   });
