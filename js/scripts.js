@@ -1,31 +1,34 @@
-
-//var outputArr =[];
+//Biz Logic
 var ul = $('#output ul');
 function countUp(numInput) {
-  const outputArr =[];
-  for (var i = 1; i <= numInput; i++) {
-    if (i % 15 === 0) {
+  var outputArr =[];
+  for (var index = 1; index <= numInput; index++) {
+
+    if (index % 15 === 0) {
       outputArr.push("Ping-Pong");
-    } else if (i % 5 === 0) {
-      outputArr.push("pong");
-    } else if (i % 3 === 0) {
+    } else if (index % 3 === 0) {
       outputArr.push("Ping");
+    } else if (index % 5 === 0) {
+      outputArr.push("Pong");
     } else {
-      outputArr.push(i);
+      outputArr.push(index);
     };
 
   };
   return outputArr;
 };
 
-
+//User Interface Logic
 $(document).ready(function() {
-  $("#main-content form").submit(function(event) {
+  $("#input form").submit(function(event) {
     event.preventDefault();
+    debugger;
     var numInput = parseInt($("input#userInput").val());
     var result = countUp(numInput);
 
-    for ()
-    $("#output").text(result);
+for (var index=0; index < result.length; index++) {
+  $('#output ul').append("<li>" + result[index] + "</li>");
+}
+
   });
 });
